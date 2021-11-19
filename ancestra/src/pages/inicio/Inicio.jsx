@@ -1,5 +1,4 @@
 import React from "react";
-//import NavBar from "../../components/NavBar";
 import Home from "./components/Home";
 import Destacados from "./components/Destacados";
 import Recientes from "./components/Recientes";
