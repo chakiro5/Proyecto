@@ -1,5 +1,6 @@
 import React from 'react';
 import Fragment from "react";
+import Link from 'react'
 
 const NavBar = () => {
   
@@ -7,28 +8,28 @@ const NavBar = () => {
     
     <Fragment>
       <div className="header-1">
-        <a href="/" className="logo"> <i className="image"><img src="images/logo-1.svg" alt="" /></i></a>
+         <link to="/" class="logo"> <i class="image"><img src="images/logo-1.svg" alt="" /></i></link>
 
         <form action="" class="search-form" />
         <input type="search" name="" placeholder="Buscar productos..." id="search-box" />
-        <label for="search-box" className="fas fa-search"></label>
+        <label for="search-box" class="fas fa-search"></label>
       <form/>
 
-      <div className="icons">
-        <div id="search-btn" className="fas fa-search"></div>
-        <a href="/" class="fas fa-heart"></a>
-        <a href="/" class="fas fa-shopping-cart"></a>
-        <div id="login-btn" className="fas fa-user"></div>
+      <div class="icons">
+        <div id="search-btn" class="fas fa-search"></div>
+        <Link to="/" class="fas fa-heart"></Link>
+        <Link to="/" class="fas fa-shopping-cart"></Link>
+        <div id="login-btn" class="fas fa-user"></div>
       </div>
-    </div><div className="header-2">
-        <nav className="navbar">
-          <a href="/home">INICIO</a>
-          <a href="/featured">DESTACADOS</a>
-          <a href="/arrivals">RECIENTES</a>
-          <a href="/reviews">RESEÑAS</a>
-          <a href="/blogs">NOSOTROS</a>
-          <a href="./productos.html" target="_blank">PRODUCTOS</a>
-          <a href="./formulariologin.html">DASHBOARD</a>
+    </div><div class="header-2">
+        <nav class="navbar">
+          <Link to="/home">INICIO</Link>
+          <Link to="/featured">DESTACADOS</Link>
+          <Link to="/arrivals">RECIENTES</Link>
+          <Link to="/reviews">RESEÑAS</Link>
+          <Link to="/blogs">NOSOTROS</Link>
+          <Link to="./productos.html" target="_blank">PRODUCTOS</Link>
+          <Link to="./formulariologin.html">DASHBOARD</Link>
         </nav>
       </div>
       </Fragment>

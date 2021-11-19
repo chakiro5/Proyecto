@@ -4,7 +4,7 @@ const Home = () => {
 
     <div class="row">
 
-        <div className="container">
+        <div class="container">
             <h3>Descuento del 25% <br/> en éstos productos.</h3>
             <p>Nunca sabes lo que quieres hasta que lo ves
                 en oferta. <br/> <i>Promoción válida hasta el 15 de octubre del 2021 <br/> o hasta acabar CICLO 4</i>
