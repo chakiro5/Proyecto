@@ -1,28 +1,27 @@
-import Accesorios from "./components/Accesorios";
-import Hamacas from "./components/Hamacas";
-import Instrumentos from "./components/Instrumentos";
-import Ropa from "./components/Ropa";
-
 const Productos = () => {
   return (
-    <div className="p-3 pm-md-4 mx-auto text-center">
-      <section id="product" className="light">
-        <header className="title">
-          <h2>
-            Nuestros <span>productos</span>
-          </h2>
-          <p>;
-            Lorem ipsum Dolor et reprehenderit laborum deserunt aliquip
-            incididunt tempor id non. Lorem ipsum Fugiat anim labore cupidatat
-            consequat non in sit dolore anim anim consequat nisi.
-          </p>
-        </header>
-      </section>
-      <Accesorios/>
-      <Hamacas/>
-      <Instrumentos/>
-      <Ropa />
-    </div>
+    <>
+      <div className="container">
+        <div id="product" className="light">
+          <header className="title">
+            <h2>
+              Nuestros <span>productos</span>
+            </h2>
+            <p>
+              En Colombia sigue habiendo un gran número de comunidades indígenas
+              y sus tradiciones. La artesanía es parte integrante de la historia
+              del país, pero también de su patrimonio inmaterial. La artesanía
+              es una importante fuente de ingresos para las comunidades, pero
+              también una forma de preservar su modo de vida y darlo a conocer
+              más allá de las fronteras.
+              Somos una empresa dedicada a la venta y distribución de poductos artesanales
+              de comunidades indígenas de Colombia
+            </p>
+          </header>
+        </div>
+      </div>
+      
+    </>
   );
 };
 

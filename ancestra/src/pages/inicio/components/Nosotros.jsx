@@ -1,52 +1,64 @@
+import { BrowserRouter as Router, Link } from "react-router-dom";
 const Nosotros = () => {
-    return (
-        <section className="blogs" id="blogs">
-
-        <h1 class="heading"> <span>SOBRE NOSOTROS</span> </h1>
-
-        <div class="swiper blogs-slider">
-
-            <div class="swiper-wrapper">
-
-                <div class="swiper-slide box">
-                    <div class="image">
-                        <img src="images/blog-1.jpg" alt=""/>
-                    </div>
-                    <div class="content">
-                        <h3>QUIENES SOMOS</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, odio.</p>
-                        <a href="/" class="btn">Leer más</a>
-                    </div>
-                </div>
-
-                <div class="swiper-slide box">
-                    <div class="image">
-                        <img src="images/blog-2.png" alt=""/>
-                    </div>
-                    <div class="content">
-                        <h3>VENDE CON NOSOTROS</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, odio.</p>
-                        <a href="/" class="btn">Leer más</a>
-                    </div>
-                </div>
-
-                <div class="swiper-slide box">
-                    <div class="image">
-                        <img src="images/blog-3.jpg" alt=""/>
-                    </div>
-                    <div class="content">
-                        <h3>NUESTRAS POLÍTICAS</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, odio.</p>
-                        <a href="/" class="btn">Leer más</a>
-                    </div>
-                </div>
-
+  return (
+    <div className="container">
+      <Router>
+        <h1 className="heading">
+          {" "}
+          <span>SOBRE NOSOTROS</span>{" "}
+        </h1>
+        <div className="swiper blogs-slider">
+          <div className="swiper-wrapper">
+            <div className="swiper-slide box">
+              <div className="image">
+                <img src="images/blog-1.jpg" alt="" />
+              </div>
+              <div className="content">
+                <h3>QUIENES SOMOS</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Optio, odio.
+                </p>
+                <Link to="/" className="btn">
+                  Leer más
+                </Link>
+              </div>
             </div>
-
+            <div className="swiper-slide box">
+              <div className="image">
+                <img src="images/blog-2.png" alt="" />
+              </div>
+              <div className="content">
+                <h3>VENDE CON NOSOTROS</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Optio, odio.
+                </p>
+                <Link to="/" className="btn">
+                  Leer más
+                </Link>
+              </div>
+            </div>
+            <div className="swiper-slide box">
+              <div className="image">
+                <img src="images/blog-3.jpg" alt="" />
+              </div>
+              <div className="content">
+                <h3>NUESTRAS POLÍTICAS</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Optio, odio.
+                </p>
+                <Link to="/" className="btn">
+                  Leer más
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
+      </Router>
+    </div>
+  );
+};
 
-    </section>
-      );
-}
- 
 export default Nosotros;

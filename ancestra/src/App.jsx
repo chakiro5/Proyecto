@@ -1,13 +1,15 @@
-import React from "react";
 import Inicio from "./pages/inicio/Inicio";
 import Productos from "./pages/productos/Productos";
-import NavBar from "./components/NavBar"
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+import "./App.css";
 function App() {
   return (
     <div className="App">
-       <Inicio/>
-       <Productos/>
-       <NavBar/>
+      <NavBar/>
+      <Inicio/>
+      <Productos/>
+      <Footer/>
     </div>
   );
 }
