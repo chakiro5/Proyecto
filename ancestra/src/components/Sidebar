@@ -1,0 +1,44 @@
+import React from 'react';
+import * as falcons from 'react-icons/fa';
+import * as AiIcons from 'react-icons/ia';
+import { Link } from 'react-router-dom';
+
+
+export const SidebarData = [
+  {
+    title: 'Inicio',
+    path: '/Inicio',
+    icon: <AiIcons.AiFillHome />
+    cName: 'nav-text'
+  }
+{
+    title: 'Destacados',
+    path: '/Destacados',
+    icon: <AiIcons.FaCartPlus />
+    cName: 'nav-text'
+ },
+{
+    title: 'Accesorios',
+    path: '/Accesorios',
+    icon: <AiIcons.IoMdPeople />
+    cName: 'nav-text'
+ },
+{
+    title: 'Ropa&Cultura',
+    path: '/Ropa&Cultura',
+    icon: <AiIcons.FaEnvelopeOpenText/>
+    cName: 'nav-text'
+ },
+{
+    title: 'Login',
+    path: '/Login',
+    icon: <AiIcons.AiFillHome />
+    cName: 'nav-text'
+ },
+{
+    title: 'Carrito',
+    path: '/Carrito',
+    icon: <AiIcons.IoMdHelpCircle />
+    cName: 'nav-text'
+ },
+{
